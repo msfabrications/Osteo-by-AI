@@ -1,62 +1,62 @@
 html, body {
-  min-height: 100vh;   /* يغطي الشاشة */
+  min-height: 100vh;  
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #f7fafc;
 }
 
-/* نخلي main-content هو اللي مرن */
+
 #main-content {
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
 }
 
-/* 3. العنصر الرئيسي */
+
 main {
-  flex: 1 1 auto; /* يتمدد ليناسب الفراغ */
+  flex: 1 1 auto; 
 }
 
-/* 4. رأس الصفحة (header) */
+
 header {
-  flex: 0 1 auto; /* ارتفاع ثابت أو حسب المحتوى */
-  background-color: #0083b0; /* مثال لون */
+  flex: 0 1 auto; 
+  background-color: #0083b0; 
   color: white;
   padding: 1rem;
   box-sizing: border-box;
 }
 
-/* 5. الفوتر */
+
 footer {
   background-color: #374151;
   color: white;
-  width: 100vw; /* يغطي كامل العرض */
+  width: 100vw; 
   margin: 0;
   padding: 2rem 1rem;
   box-sizing: border-box;
 
-  /* الفوتر مرن لينمو ويتقلص ليملأ المساحة المتبقية */
+
   flex-shrink: 0;
   
   display: flex;
   flex-direction: column;
-  justify-content: center; /* توسيط عمودي */
-  align-items: center;     /* توسيط أفقي */
-  min-height: 100px;       /* ارتفاع أدنى */
+  justify-content: center; 
+  align-items: center;
+  min-height: 100px;      
 }
 
-/* 6. نصوص الفوتر */
+/* نصوص الفوتر */
 footer * {
   color: white;
 }
 
-/* 7. الخلفية المتدرجة */
+/* الخلفية المتدرجة */
 .gradient-bg {
   background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
 }
 
-/* 8. حاوية الفريمات */
+/* حاوية الفريمات */
 .frame-container {
   width: 90%;
   max-width: 1200px;
@@ -68,7 +68,7 @@ footer * {
   justify-content: center;
 }
 
-/* 9. الفريم */
+
 .frame {
   background: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -81,9 +81,9 @@ footer * {
   gap: 15px;
 }
 
-/* 10. الفريم الكبير */
+
 .frame-large {
-  flex: 1 1 65%; /* نسبة مرنة مع حد أدنى */
+  flex: 1 1 65%; 
   min-width: 300px;
   background: white;
   color: black;
@@ -95,9 +95,9 @@ footer * {
   justify-content: center;
 }
 
-/* 11. الفريم الصغير */
+
 .frame-small {
-  flex: 1 1 30%; /* نسبة مرنة مع حد أدنى */
+  flex: 1 1 30%; 
   min-width: 250px;
   background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
   color: white;
@@ -114,7 +114,7 @@ footer * {
   background: linear-gradient(135deg, #0083b0 0%, #00b4db 100%);
 }
 
-/* 12. الدائرة الأيقونية */
+
 .icon-circle {
   width: 70px;
   height: 70px;
@@ -125,7 +125,7 @@ footer * {
   justify-content: center;
 }
 
-/* 13. معاينة الصور في شاشة الرفع */
+
 #uploadFrame img {
   max-width: 150px;
   max-height: 150px;
@@ -133,7 +133,7 @@ footer * {
   object-fit: contain;
 }
 
-/* 14. شاشة رفع الصور */
+
 #uploadFrame {
   width: 90%;
   max-width: 1200px;
@@ -147,7 +147,7 @@ footer * {
   gap: 15px;
 }
 
-/* 15. أزرار */
+
 .button-style {
   background-color: #f0f0f0;
   padding: 12px 16px;
@@ -166,9 +166,9 @@ footer * {
 .send-button-container {
   width: 90%;
   max-width: 700px;
-  margin: 0 auto 20px; /* مسافة أسفل الزر */
+  margin: 0 auto 20px;
   display: flex;
-  justify-content: flex-end; /* زر على اليمين */
+  justify-content: flex-end;
 }
 
 .btn-send {
@@ -184,7 +184,7 @@ footer * {
 
 
 .btn-submit {
-  background-color: #16a34a; /* نفس لون زر Send */
+  background-color: #16a34a; 
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
@@ -195,12 +195,12 @@ footer * {
   font-size: 1rem;
   transition: background-color 0.3s ease;
   max-width: fit-content;
-  display: block;      /* ليتمركز */
-  margin: 0 auto;      /* ليتمركز أفقياً */
+  display: block;     
+  margin: 0 auto;      
 }
 
 .btn-submit:hover {
-  background-color: #15803d; /* لون أخضر أغمق للتمرير */
+  background-color: #15803d; 
 }
 
 .special-frame {
@@ -219,7 +219,7 @@ footer * {
   transition: border-color 0.3s ease;
 }
 
-/* تأثير عند التركيز */
+
 .special-frame input:focus,
 .special-frame select:focus,
 .special-frame textarea:focus {
@@ -228,7 +228,7 @@ footer * {
 }
 
 
-/* جميع العناصر داخل uploadSection لها نفس العرض */
+
 #uploadSection,
 #uploadSection > div,
 #uploadSection > div > div,
@@ -237,14 +237,14 @@ footer * {
 #uploadSection #notesContainer,
 #uploadSection #messageContainer,
 #uploadSection #processedResultsSection {
-    width: 100%;        /* تستخدم كامل عرض العنصر الأب */
-    max-width: 1200px;  /* نفس الحد الأقصى لجميع العناصر */
-    margin-left: auto;  /* تمركز أفقياً */
-    margin-right: auto; /* تمركز أفقياً */
-    box-sizing: border-box; /* يشمل الحشو والحدود */
+    width: 100%;        
+    max-width: 1200px;  
+    margin-left: auto;  
+    margin-right: auto; 
+    box-sizing: border-box;
 }
 
-/* إزالة أي تباين عرض سابق */
+
 #uploadSection > div,
 #uploadSection .special-frame,
 #uploadSection #notesContainer,
@@ -255,12 +255,12 @@ footer * {
     padding-right: 20px;
 }
 
-/* تحسين التباعد بين العناصر */
+
 #uploadSection > div {
     margin-bottom: 20px;
 }
 
-/* التأكد أن الصور والمعاينات لا تتجاوز الحد الأقصى */
+
 #uploadSection img,
 #uploadSection #imagesPreview {
     max-width: 100%;
@@ -268,8 +268,8 @@ footer * {
 }
 
 .spinner {
-  border: 8px solid #f3f3f3; /* خلفية الحلقة */
-  border-top: 8px solid #0083b0; /* الجزء المتحرك */
+  border: 8px solid #f3f3f3; 
+  border-top: 8px solid #0083b0; 
   border-radius: 50%;
   width: 60px;
   height: 60px;
