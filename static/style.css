@@ -1,0 +1,283 @@
+html, body {
+  min-height: 100vh;   /* يغطي الشاشة */
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7fafc;
+}
+
+/* نخلي main-content هو اللي مرن */
+#main-content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 3. العنصر الرئيسي */
+main {
+  flex: 1 1 auto; /* يتمدد ليناسب الفراغ */
+}
+
+/* 4. رأس الصفحة (header) */
+header {
+  flex: 0 1 auto; /* ارتفاع ثابت أو حسب المحتوى */
+  background-color: #0083b0; /* مثال لون */
+  color: white;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* 5. الفوتر */
+footer {
+  background-color: #374151;
+  color: white;
+  width: 100vw; /* يغطي كامل العرض */
+  margin: 0;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+
+  /* الفوتر مرن لينمو ويتقلص ليملأ المساحة المتبقية */
+  flex-shrink: 0;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* توسيط عمودي */
+  align-items: center;     /* توسيط أفقي */
+  min-height: 100px;       /* ارتفاع أدنى */
+}
+
+/* 6. نصوص الفوتر */
+footer * {
+  color: white;
+}
+
+/* 7. الخلفية المتدرجة */
+.gradient-bg {
+  background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
+}
+
+/* 8. حاوية الفريمات */
+.frame-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* 9. الفريم */
+.frame {
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 320px;
+  overflow: hidden;
+  gap: 15px;
+}
+
+/* 10. الفريم الكبير */
+.frame-large {
+  flex: 1 1 65%; /* نسبة مرنة مع حد أدنى */
+  min-width: 300px;
+  background: white;
+  color: black;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 11. الفريم الصغير */
+.frame-small {
+  flex: 1 1 30%; /* نسبة مرنة مع حد أدنى */
+  min-width: 250px;
+  background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+}
+
+.frame-small:hover {
+  background: linear-gradient(135deg, #0083b0 0%, #00b4db 100%);
+}
+
+/* 12. الدائرة الأيقونية */
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 13. معاينة الصور في شاشة الرفع */
+#uploadFrame img {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+/* 14. شاشة رفع الصور */
+#uploadFrame {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* 15. أزرار */
+.button-style {
+  background-color: #f0f0f0;
+  padding: 12px 16px;
+  margin: 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.button-style:hover {
+  background-color: #e0e0e0;
+}
+
+.send-button-container {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto 20px; /* مسافة أسفل الزر */
+  display: flex;
+  justify-content: flex-end; /* زر على اليمين */
+}
+
+.btn-send {
+  background-color: #16a34a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+
+.btn-submit {
+  background-color: #16a34a; /* نفس لون زر Send */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  max-width: fit-content;
+  display: block;      /* ليتمركز */
+  margin: 0 auto;      /* ليتمركز أفقياً */
+}
+
+.btn-submit:hover {
+  background-color: #15803d; /* لون أخضر أغمق للتمرير */
+}
+
+.special-frame {
+  border: 1.5px solid #0083b0;
+  border-radius: 12px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.special-frame input,
+.special-frame select,
+.special-frame textarea {
+  border: 1.5px solid #0083b0;
+  border-radius: 8px;
+  padding: 8px 10px;
+  outline-offset: 2px;
+  transition: border-color 0.3s ease;
+}
+
+/* تأثير عند التركيز */
+.special-frame input:focus,
+.special-frame select:focus,
+.special-frame textarea:focus {
+  border-color: #005f73;
+  box-shadow: 0 0 5px #0083b0;
+}
+
+
+/* جميع العناصر داخل uploadSection لها نفس العرض */
+#uploadSection,
+#uploadSection > div,
+#uploadSection > div > div,
+#uploadSection > .special-frame,
+#uploadSection #notes,
+#uploadSection #notesContainer,
+#uploadSection #messageContainer,
+#uploadSection #processedResultsSection {
+    width: 100%;        /* تستخدم كامل عرض العنصر الأب */
+    max-width: 1200px;  /* نفس الحد الأقصى لجميع العناصر */
+    margin-left: auto;  /* تمركز أفقياً */
+    margin-right: auto; /* تمركز أفقياً */
+    box-sizing: border-box; /* يشمل الحشو والحدود */
+}
+
+/* إزالة أي تباين عرض سابق */
+#uploadSection > div,
+#uploadSection .special-frame,
+#uploadSection #notesContainer,
+#uploadSection #notes,
+#uploadSection #messageContainer,
+#uploadSection #processedResultsSection {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* تحسين التباعد بين العناصر */
+#uploadSection > div {
+    margin-bottom: 20px;
+}
+
+/* التأكد أن الصور والمعاينات لا تتجاوز الحد الأقصى */
+#uploadSection img,
+#uploadSection #imagesPreview {
+    max-width: 100%;
+    height: auto;
+}
+
+.spinner {
+  border: 8px solid #f3f3f3; /* خلفية الحلقة */
+  border-top: 8px solid #0083b0; /* الجزء المتحرك */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
