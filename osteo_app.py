@@ -37,17 +37,7 @@ model = joblib.load("models/osteoporosis_risk_model.pkl")
 
 
 def encode_image_to_base64(img, fmt=".png"):
-    """
-    Converts an image to a Base64 string safely.
-    Handles any exceptions and ensures dtype compatibility.
-
-    Args:
-        img (np.ndarray): Image array (H x W x C)
-        fmt (str): Image format, e.g., ".png" or ".jpg"
-
-    Returns:
-        str or None: Base64-encoded image string or None if failed
-    """
+    
     if img is None:
         return None
 
