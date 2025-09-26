@@ -602,6 +602,10 @@ def ai_models():
 def about():
     return render_template('about.html')
 
+@app.route("/healthz")
+def healthz():
+    return "ok", 200
+
 
 if __name__ == "__main__":
     import os
