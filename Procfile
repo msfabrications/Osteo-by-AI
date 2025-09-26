@@ -1,1 +1,1 @@
-web: gunicorn osteo_app:app
+web: gunicorn osteo_app:app --bind 0.0.0.0:$PORT
