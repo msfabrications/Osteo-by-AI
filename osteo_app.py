@@ -4,40 +4,72 @@ from flask import request, jsonify
 from flask_cors import CORS
 import os
 import time
-import joblib
+#import joblib
 import base64, cv2, numpy as np, traceback
 from pipelines.OA_pipeline import KneeProcessor
-from ultralytics import YOLO
-from keras.models import load_model
-from pipelines.OA_pipeline2 import Pipeline2
+#from ultralytics import YOLO
+#from keras.models import load_model
+#from pipelines.OA_pipeline2 import Pipeline2
 from pipelines.OP_Frame1 import bmd_diagnosis
-from pipelines.OP_Frame2 import KneePipelineEnhanced
+#from pipelines.OP_Frame2 import KneePipelineEnhanced
 from sklearn.preprocessing import LabelEncoder
 #OA
-pipeline2 = Pipeline2("models/EfficientNetB3_model_3_OA.keras")
+#pipeline2 = Pipeline2("models/EfficientNetB3_model_3_OA.keras")
 
 
 app = Flask(__name__)
 CORS(app)
 
+pipeline2 = None
+yolo_model = None
+main_model = None
+pipeline = None
+model = None
+
+
+def load_models():
+    global pipeline2, yolo_model, main_model, pipeline, model
+    print("[INFO] Loading models... this may take some time.")
+    # OA
+    from pipelines.OA_pipeline2 import Pipeline2
+    pipeline2 = Pipeline2("models/EfficientNetB3_model_3_OA.keras")
+
+    # YOLO
+    from ultralytics import YOLO
+    yolo_model_path = "models/cv_yolo_model_last.pt"
+    yolo_model = YOLO(yolo_model_path)
+
+    # OP
+    from keras.models import load_model
+    main_model = load_model("models/best_modelEfficientNetB3 (5).keras")
+    from pipelines.OP_Frame2 import KneePipelineEnhanced
+    pipeline = KneePipelineEnhanced(yolo_model=yolo_model, main_model=main_model)
+
+    import joblib
+    model = joblib.load("models/osteoporosis_risk_model.pkl")
+
+    print("[INFO] Models loaded successfully.")
+
+
+# استدعاء التحميل مرة واحدة عند بدء التطبيق
+load_models()
 
 #YOLO
-yolo_model_path = "models/cv_yolo_model_last.pt"
-yolo_model = YOLO(yolo_model_path)
+#yolo_model_path = "models/cv_yolo_model_last.pt"
+#yolo_model = YOLO(yolo_model_path)
 knee_processor = KneeProcessor(yolo_model)
 
 
 
 #OP
 #main_model = load_model("models/OP_Image_model.keras")
-main_model = load_model("models/best_modelEfficientNetB3 (5).keras")
-pipeline = KneePipelineEnhanced(yolo_model=yolo_model, main_model=main_model)
+#main_model = load_model("models/best_modelEfficientNetB3 (5).keras")
+#pipeline = KneePipelineEnhanced(yolo_model=yolo_model, main_model=main_model)
 
-model = joblib.load("models/osteoporosis_risk_model.pkl")
+#model = joblib.load("models/osteoporosis_risk_model.pkl")
 
 
 def encode_image_to_base64(img, fmt=".png"):
-    
     if img is None:
         return None
 
@@ -592,13 +624,6 @@ def ai_models():
 def about():
     return render_template('about.html')
 
-@app.route("/healthz")
-def healthz():
-    return "ok", 200
-
 
 if __name__ == "__main__":
-    import os
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
-
+    app.run(debug=True)
