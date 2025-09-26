@@ -51,9 +51,9 @@ def load_models():
     print("[INFO] Models loaded successfully.")
 
 
-# استدعاء التحميل مرة واحدة عند بدء التطبيق
-load_models()
-
+@app.before_serving
+def startup():
+    load_models()
 #YOLO
 #yolo_model_path = "models/cv_yolo_model_last.pt"
 #yolo_model = YOLO(yolo_model_path)
