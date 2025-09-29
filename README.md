@@ -25,7 +25,7 @@ The project aims to contribute to early detection and monitoring of bone disease
 <img src="images/OA_model_results.png" alt="OA_model_results" width="50%"/>
 
 
-ACC = .93
+Accuracy = .93
 
 ## 🪞Front-End
 
@@ -53,13 +53,13 @@ ACC = .93
 <img src="images/OP_model1_results.jpg" alt="OP_model1_results" width="50%"/>
 
 
-Acc = .81
+Accuracy = .81
 
 ### 🔎 Results (Risk Factors Model)
 
 <img src="images/OP_model2_results.jpg" alt="OP_model2_results" width="50%"/>
 
-Acc = .91
+Accuracy = .91
 
 ### 🪞 Front-End
 
