@@ -26,13 +26,15 @@ The project aims to contribute to early detection and monitoring of bone disease
 
 ACC = .93
 
-### 🌁 Front-End
+## 🪞Front-End
 
 <p align="center">
   <img src="images/Screenshot 2025-09-29 230347.png" alt="الصورة الأولى" width="30%"/>
   <img src="images/Screenshot 2025-09-29 230736.png" alt="الصورة الثانية" width="30%"/>
   <img src="images/Screenshot 2025-09-29 230910.png" alt="الصورة الثالثة" width="30%"/>
 </p>
+
+
 
 
 ## 2️⃣ Osteoporosis (OP)
@@ -47,23 +49,27 @@ ACC = .93
 
 ### 🔎 Results (Images Model)
 
-![OP_model1_results](images/OP_model1_results.jpg)
+<img src="images/OP_model1_results.jpg" alt="OP_model1_results" width="50%"/>
+
 
 Acc = .81
 
 ### 🔎 Results (Risk Factors Model)
 
-![OP_model2_results](images/OP_model2_results.jpg)
+<img src="images/OP_model2_results.jpg" alt="OP_model2_results" width="50%"/>
 
 Acc = .91
 
-### 🌁 Front-End
+### 🪞 Front-End
 
 <p align="center">
   <img src="images/Screenshot 2025-09-29 231138.png" alt="الصورة الأولى" width="30%"/>
   <img src="images/Screenshot 2025-09-29 231156.png" alt="الصورة الثانية" width="30%"/>
   <img src="images/Screenshot 2025-09-29 231504.png" alt="الصورة الثالثة" width="30%"/>
 </p>
+
+
+
 
 
 ## ✨Helper Model : YOLOv8 Training — [Roboflow](https://roboflow.com)
