@@ -29,11 +29,11 @@ ACC = .93
 
 ## 🪞Front-End
 
-<p align="center">
-  <img src="images/Screenshot 2025-09-29 230347.png" alt="الصورة الأولى" width="30%"/>
-  <img src="images/Screenshot 2025-09-29 230736.png" alt="الصورة الثانية" width="30%"/>
-  <img src="images/Screenshot 2025-09-29 230910.png" alt="الصورة الثالثة" width="30%"/>
-</p>
+
+  <img src="images/Screenshot 2025-09-29 230347.png" alt="الصورة الأولى" width="50%"/>
+  <img src="images/Screenshot 2025-09-29 230736.png" alt="الصورة الثانية" width="50%"/>
+  <img src="images/Screenshot 2025-09-29 230910.png" alt="الصورة الثالثة" width="50%"/>
+
 
 
 
@@ -63,11 +63,11 @@ Acc = .91
 
 ### 🪞 Front-End
 
-<p align="center">
-  <img src="images/Screenshot 2025-09-29 231138.png" alt="الصورة الأولى" width="30%"/>
-  <img src="images/Screenshot 2025-09-29 231156.png" alt="الصورة الثانية" width="30%"/>
-  <img src="images/Screenshot 2025-09-29 231504.png" alt="الصورة الثالثة" width="30%"/>
-</p>
+
+  <img src="images/Screenshot 2025-09-29 231138.png" alt="الصورة الأولى" width="50%"/>
+  <img src="images/Screenshot 2025-09-29 231156.png" alt="الصورة الثانية" width="50%"/>
+  <img src="images/Screenshot 2025-09-29 231504.png" alt="الصورة الثالثة" width="50%"/>
+
 
 
 
