@@ -1,4 +1,4 @@
-# Osteo-by-AI
+# Osteo-by-AI 🤖🦴🩻
 End-to-end AI framework for osteoarthritis and osteoporosis diagnosis
 
 ## Abstarct
@@ -9,6 +9,35 @@ It employs an integrated AI framework combining deep learning, ensemble modeling
 Data preprocessing, augmentation, and Grad-CAM visualization enhance both model performance and interpretability. Developed and tested on publicly available datasets, the system achieved promising results and was deployed via a web-based interface for real-time clinical support, with further validation recommended for broader application.
 
 The project aims to contribute to early detection and monitoring of bone diseases, especially in regions with limited access to medical expertise. Results demonstrate promising accuracy, confirming the potential of artificial intelligence in medical imaging and diagnostics.
+
+## 1- Osteoarthritis
+### System Design
+![OA_System](images/OA_System.png)
+
+### Preprocessing Steps
+![OA_images_preprocessing](images/OA_images_preprocessing.png)
+
+### Results
+![OA_model_results](images/OA_model_results.png)
+
+## 2- Osteoporosis
+### System Design
+![OP_System](images/OP_System.png)
+
+### Preprocessing Steps (Images)
+![OP_images_Preprocessing](images/OP_images_Preprocessing.jpg)
+
+### Results (Images Model)
+![OP_model1_results](images/OP_model1_results.jpg)
+
+### Results (Risk Factors Model)
+![OP_model2_results](images/OP_model2_results.jpg)
+
+## Helper Model : YOLOv8 Training
+![YOLO_Training](images/YOLO_Training.png)
+
+
+
 
 
 
