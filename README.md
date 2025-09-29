@@ -10,7 +10,7 @@ Data preprocessing, augmentation, and Grad-CAM visualization enhance both model 
 
 The project aims to contribute to early detection and monitoring of bone diseases, especially in regions with limited access to medical expertise. Results demonstrate promising accuracy, confirming the potential of artificial intelligence in medical imaging and diagnostics.
 
-## 1- Osteoarthritis
+## 1- Osteoarthritis (OA)
 
 ### System Design
 
@@ -24,7 +24,18 @@ The project aims to contribute to early detection and monitoring of bone disease
 
 ![OA_model_results](images/OA_model_results.png)
 
-## 2- Osteoporosis
+ACC = .93
+
+### Front-End
+
+<p align="center">
+  <img src="images/Screenshot 2025-09-29 230347.png" alt="الصورة الأولى" width="30%"/>
+  <img src="images/Screenshot 2025-09-29 230736.png" alt="الصورة الثانية" width="30%"/>
+  <img src="images/Screenshot 2025-09-29 230910.png" alt="الصورة الثالثة" width="30%"/>
+</p>
+
+
+## 2- Osteoporosis (OP)
 
 ### System Design
 
@@ -38,9 +49,22 @@ The project aims to contribute to early detection and monitoring of bone disease
 
 ![OP_model1_results](images/OP_model1_results.jpg)
 
+Acc = .81
+
 ### Results (Risk Factors Model)
 
 ![OP_model2_results](images/OP_model2_results.jpg)
+
+Acc = .91
+
+### Front-End
+
+<p align="center">
+  <img src="images/Screenshot 2025-09-29 231138.png" alt="الصورة الأولى" width="30%"/>
+  <img src="images/Screenshot 2025-09-29 231156.png" alt="الصورة الثانية" width="30%"/>
+  <img src="images/Screenshot 2025-09-29 231504.png" alt="الصورة الثالثة" width="30%"/>
+</p>
+
 
 ## Helper Model : YOLOv8 Training — [Roboflow](https://roboflow.com)
 
