@@ -82,9 +82,9 @@ Accuracy = .91
 
 ## Authors
 
-👩🏻‍💻 Rama Amjad Alsadeq
-👩🏻‍💻 Oula Saleem Hanandeh
-👩🏻‍💻 Shaima Feras Alharahsheh
+👩🏻‍💻 Rama Amjad Alsadeq <br>
+👩🏻‍💻 Oula Saleem Hanandeh <br>
+👩🏻‍💻 Shaima Feras Alharahsheh <br>
 
 This project, in its first version, was developed as a fulfillment of the graduation requirements for the Data Science and Artificial Intelligence program at Al al-Bayt University, Jordan, in August 2025.
 
