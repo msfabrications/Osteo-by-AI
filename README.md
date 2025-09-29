@@ -22,7 +22,8 @@ The project aims to contribute to early detection and monitoring of bone disease
 
 ### 🔎 Results
 
-![OA_model_results](images/OA_model_results.png)
+<img src="images/OA_model_results.png" alt="OA_model_results" width="50%"/>
+
 
 ACC = .93
 
